@@ -1,0 +1,35 @@
+.sidebar {
+    width: 3vw;
+    height: 100%;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+
+    &__nav {
+        
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        &--link {
+            width: 100%;
+            height: 50px;
+
+            &-img {
+                width: 19px;
+                height: 19px;
+            }
+        }
+    }
+
+    &__arrow {
+        margin-top: 300px;
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,31 @@
+.questCard {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 0 4px 1px #9747FF26;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    &__img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    &__middle {
+        width: 630px;
+        &--title {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        &--desc {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #6F7979;
+        }
+    }
+}

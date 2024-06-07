@@ -1,0 +1,42 @@
+.questList {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #DAE5E4;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    width: 45vw;
+    height: 43vh;
+    overflow-y: auto;
+    margin-bottom: 24px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 400px;
+        position: absolute;
+        left: 8px;
+
+        &-thumb {
+            
+            background-color: #BEC9C8;
+            height: 200px;
+            top: 68px;
+        }
+    }
+
+    &__title {
+        font-family: "Nunito Sans", sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        font-size: 22px;
+
+        &--img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
