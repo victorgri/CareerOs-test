@@ -3,5 +3,5 @@
  - Node version 20
  - clone this repo
  - open on IDE
- - run [npm i]
- - run [npm run dev] 
+ - run <npm i>
+ - run <npm run dev>
