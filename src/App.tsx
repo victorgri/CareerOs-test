@@ -7,7 +7,7 @@ function App() {
     const [quests, setQuests] = useState<Quest[]>([]);
 
     useEffect(() => {
-      fetch("https://quests.json")
+      fetch("/CareerOs-test/quests.json")
         .then((res) => res.json())
         .then((data) => setQuests(data.quests));
     }, []);
