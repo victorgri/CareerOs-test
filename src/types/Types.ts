@@ -13,6 +13,7 @@ export interface Quest {
   contact: Contact;
   job: Job;
   created_at: string;
+  description: string;
 }
 
 export interface Company {

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
+
 import { QuestList } from "./components/QuestList/QuestList";
-import { SideBar } from "./components/SideBar/SideBar";
 import { Quest } from "./types/Types";
-import { Header } from "./components/Header/Header";
 
 function App() {
     const [quests, setQuests] = useState<Quest[]>([]);
@@ -13,17 +12,11 @@ function App() {
         .then((data) => setQuests(data.quests));
     }, []);
 
-  return (
-    <div className="app">
-      <SideBar />
-      <div className="app-right">
-        <Header />
-
-        <QuestList styleName="quest" data={quests} title="Quests" />
-        <QuestList styleName="message" data={[]} title="Recent Messages" />
+    return (
+      <div className="app">
+        <QuestList quests={quests} title="Quests" />
       </div>
-    </div>
-  );
+    );
 }
 
 export default App;

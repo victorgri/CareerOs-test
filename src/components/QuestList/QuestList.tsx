@@ -4,19 +4,18 @@ import { QuestCard } from "../QuestCard/QuestCard";
 import './QuestList.scss';
 
 type Props = {
-    styleName: string;
-    data: Quest[];
+    quests: Quest[];
     title: string;
 };
 
-export const QuestList: React.FC<Props> = ({styleName, data, title}) => {
+export const QuestList: React.FC<Props> = ({ quests, title}) => {
     return (
-      <div className={`box questList ${styleName}`}>
+      <div className="questList">
             <h1 className="questList__title">
                 {title}
                 <img src="./img/info.svg" alt="info" className="questList__title--img" />
             </h1>
-        {data.map((d) => (
+        {quests.map((d) => (
           <QuestCard key={d.id} quest={d} />
         ))}
       </div>
