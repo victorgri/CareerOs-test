@@ -7,7 +7,7 @@ function App() {
     const [quests, setQuests] = useState<Quest[]>([]);
 
     useEffect(() => {
-      fetch("/quests.json")
+      fetch("https://quests.json")
         .then((res) => res.json())
         .then((data) => setQuests(data.quests));
     }, []);
